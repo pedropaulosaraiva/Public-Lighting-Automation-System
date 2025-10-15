@@ -28,7 +28,7 @@ The prototype uses four interrupt sources to guarantee fast reaction to hazardou
 3. **Slave command switch interrupt** (level-change): triggered by a local manual command on the slave.
 4. **SPI communication interrupt**: used for slave reception when the master polls. The master periodically requests sensor data and slave status and may send an `all-off` command.
 
-> Design note: interrupts ensure that switching-off occurs immediately and is not delayed by the slaves' acquisition/display loop.
+> Note: interrupts ensure that switching-off occurs immediately and is not delayed by the slaves' acquisition/display loop.
 
 ## Master behavior
 
@@ -62,10 +62,10 @@ Finally, the master requests data from one slave at a time, timed by the control
 ## Videos / Demonstrations
 
 The following videos illustrate the physical circuit assembly (English subtitles must be enabled):
-* (Overall circuit operation)[https://www.youtube.com/watch?v=ur7O8wWbcbM]
-* (Master operation)[https://youtube.com/shorts/-HkSp_af6P0]
-* (Master all-off + slave switches)[https://youtube.com/shorts/ae5NhZZ41S8]
-* (Slave operation)[https://youtube.com/shorts/8YufgrUaJ8M]
+* [Overall circuit operation](https://www.youtube.com/watch?v=ur7O8wWbcbM)
+* [Master operation](https://youtube.com/shorts/-HkSp_af6P0)
+* [Master all-off + slave switches](https://youtube.com/shorts/ae5NhZZ41S8)
+* [Slave operation](https://youtube.com/shorts/8YufgrUaJ8M)
 
 
 ## Notes & Recommendations
